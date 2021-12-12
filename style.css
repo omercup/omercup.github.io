@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Gloria+Hallelujah&display=swap');
+
+@keyframes bounce {
+	0% {
+		transform: translateY(6px);
+	}
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+.music {
+	animation: bounce 0.8s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+body {
+	background-color: #3b4252;
+	text-align: center;
+}
+
+#container {
+	background-color: #4c566a;
+	box-shadow: 10px 10px #2e3440;
+	border-radius: 20px;
+	padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	color: #88c0d0;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 72px;
+	line-height: 0.25;
+}
+
+h1::before {
+    color: #8fbcbb;
+    content: "'";
+}
+
+h1::after {
+    color: #8fbcbb;
+    content: ",";
+}
+
+p {
+	color: #5e81ac;
+	font-family: 'Comfortaa', cursive;
+	font-size: 24px;
+	line-height: 0.5;
+}
+
+span {
+	color: #8fbcbb;
+}
+
+a {
+	color: #81a1c1;
+	font-size: 36px;
+    text-decoration: none;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #eceff4;
+}
