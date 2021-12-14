@@ -1,33 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
-		<script src="script.js"></script>
-		<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-		<title>omercup</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-	</head>
-	<body>
-		<div id="container">
-			<h1>omercup</h1>
-			<p>
-				<span class="iconify music" data-icon="fa-brands:itunes-note"></span>
-                <span class="lanyard"></span>
-			</p>
-			<div id="links" style="word-spacing: 20px">
-                <a href="https://discord.com/users/349536885749579777" title="Discord">
-                    <span class="iconify" data-icon="fa-brands:discord"></span>
-                </a>
-				<a href="https://github.com/omercup" title="GitHub">
-                    <span class="iconify" data-icon="fa-brands:github"></span>
-                </a>
-				<a href="https://twitter.com/heisomercup" title="Twitter">
-                    <span class="iconify" data-icon="fa-brands:twitter"></span>
-                </a>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            gloria: ["Gloria Hallelujah"],
+            comfortaa: ["Comfortaa"],
+          },
+          extend: {
+            colors: {
+              arkaplan: "#3b4252",
+              boxbg: "#4c566a",
+              textcolor: "#88c0d0",
+              textcolor2: "#8fbcbb",
+              textcolor3: "#81a1c1",
+              textcolor4: "#5e81ac",
+              textcolor5: "#eceff4",
+            },
+          },
+        },
+      };
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <title>omercup</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body
+    class="bg-arkaplan min-h-screen flex text-white justify-center truncate"
+  >
+    <div
+      id="container"
+      class="
+        drop-shadow-2xl
+        shadow-2xl
+        self-center
+        flex flex-col
+        bg-boxbg
+        rounded-3xl
+        font-comfortaa
+        text-2xl
+        md:p-12
+        p-6
+        text-textcolor2
+        select-none
+        max-w-xl
+      "
+    >
+      <h1
+        class="
+          css
+          md:text-7xl
+          text-4xl
+          self-center
+          font-gloria
+          text-textcolor
+          font-bold
+          md:pb-6
+        "
+      >
+        omercup
+      </h1>
+      <div class="flex py-4 mx-auto">
+        <span
+          class="iconify mx-2 md:text-3xl text-md animate-spin text-textcolor4"
+          data-icon="fa-solid:compact-disc"
+        ></span>
+        <p
+          id="lanyard"
+          class="md:text-2xl text-base justify-center truncate md:w-96 w-72"
+        ></p>
+      </div>
+      <div
+        id="links"
+        class="text-textcolor3 flex space-x-12 self-center md:text-4xl"
+        style="word-spacing: 20px"
+      >
+        <a
+          href="https://discord.com/users/349536885749579777"
+          class="hover:scale-125 transition duration-500 hover:text-textcolor5"
+          title="Discord"
+        >
+          <span class="iconify" data-icon="fa-brands:discord"></span>
+        </a>
+        <a
+          href="https://github.com/omercup"
+          class="hover:scale-125 transition duration-500 hover:text-textcolor5"
+          title="GitHub"
+        >
+          <span class="iconify" data-icon="fa-brands:github"></span>
+        </a>
+        <a
+          href="https://twitter.com/heisomercup"
+          class="hover:scale-125 transition duration-500 hover:text-textcolor5"
+          title="Twitter"
+        >
+          <span class="iconify" data-icon="fa-brands:twitter"></span>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
