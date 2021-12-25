@@ -9,8 +9,8 @@
 
       <div class="flex gap-8 justify-center">
         <a href="https://discord.com/users/349536885749579777" target="_blank" rel="noreferrer noopener"><Discord class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-secondary)" /></a>
-        <a href="https://twitter.com/heisomercup" target="_blank" rel="noreferrer noopener"><GitHub class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-secondary)" /></a>
-        <a href="https://github.com/omercup" target="_blank" rel="noreferrer noopener"><Twitter class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-secondary)" /></a>
+        <a href="https://github.com/omercup" target="_blank" rel="noreferrer noopener"><GitHub class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-secondary)" /></a>
+        <a href="https://twitter.com/heisomercup" target="_blank" rel="noreferrer noopener"><Twitter class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-secondary)" /></a>
       </div>
     </figure>
   </section>
