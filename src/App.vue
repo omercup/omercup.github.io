@@ -24,11 +24,11 @@
             width="42"
           />
         </a>
-        <a 
-					href="https://github.com/omercup"
-					rel="noreferrer noopener"
-					target="_blank
-				>
+        <a
+          href="https://github.com/omercup"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <Icon
             class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-primary)"
             icon="simple-icons:github"
@@ -36,21 +36,21 @@
           />
         </a>
         <a
-					href="https://steamcommunity.com/id/omercup/"
-					rel="noreferrer noopener"
-					target="_blank"
-				>
+          href="https://steamcommunity.com/id/omercup/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <Icon
             class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-primary)"
             icon="simple-icons:steam"
             width="42"
           />
         </a>
-        <a
-					href="https://twitter.com/heisomercup"
-					rel="noreferrer noopener"
-					target="_blank"
-				>
+        <a 
+          href="https://twitter.com/heisomercup"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <Icon
             class="transform transition duration-250 ease-out text-icon w-10 md:w-12 hover:(scale-125 text-primary)"
             icon="simple-icons:twitter"
