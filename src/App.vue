@@ -29,7 +29,7 @@ const lanyard = ref(null)
 
 useLanyard({
   socket: true,
-  userId: "474537652943847444",
+  userId: "349536885749579777",
   onPresenceUpdate(presence) {
     if (presence.listening_to_spotify) lanyard.value = `${presence.spotify.artist} - ${presence.spotify.song}`; else lanyard.value = null
   }
