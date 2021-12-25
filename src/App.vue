@@ -33,5 +33,5 @@ useLanyard({
   onPresenceUpdate(presence) {
     if (presence.listening_to_spotify) lanyard.value = `${presence.spotify.artist} - ${presence.spotify.song}`; else lanyard.value = null
   }
-});
+})
 </script>
