@@ -4,7 +4,7 @@ export default defineConfig({
 	theme: {
 		fontFamily: {
 			primary: ['Gloria Hallelujah'],
-			secondary: ['Comfortaa'],
+			secondary: ['Montserrat'],
 		},
 		colors: {
 			background: '#242933',
