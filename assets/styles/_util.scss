@@ -1,0 +1,33 @@
+@use "sass:color";
+
+@mixin flex($dir: row, $gap: unset, $align: unset, $justify: unset) {
+  gap: $gap;
+  display: flex;
+  align-items: $align;
+  flex-direction: $dir;
+  justify-content: $justify;
+}
+
+@mixin grid($cols: unset, $rows: unset, $gap: unset) {
+  gap: $gap;
+  display: grid;
+  grid-template-columns: repeat($cols, minmax(0, 1fr));
+
+  @if $rows != unset {
+    grid-template-rows: repeat($rows, minmax(0, 1fr));
+  }
+}
+
+@mixin breakpoint($width: sm, $breakpoint: 48rem) {
+  @if $width == sm {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
+  @if $width == lg {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}

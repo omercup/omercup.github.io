@@ -1,0 +1,48 @@
+@use "util";
+
+body {
+  background: black;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+
+  &-thumb {
+    background: white;
+  }
+
+  &-track {
+    background: transparent;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  font: 1.25rem "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700 !important;
+  font: 3rem "Gloria Hallelujah", sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
