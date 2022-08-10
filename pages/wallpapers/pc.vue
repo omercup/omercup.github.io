@@ -6,26 +6,26 @@ import Vue from "vue"
 export default Vue.extend({
   data() {
     return {
-      phoneWallpapers: [] as File[]
+      pcWallpapers: [] as File[]
     }
   },
 
   async fetch() {
-    this.phoneWallpapers = await this.$http.$get<File[]>(
-      "https://api.github.com/repos/omercup/wallpapers/contents/for phones"
+    this.pcWallpapers = await this.$http.$get<File[]>(
+      "https://api.github.com/repos/omercup/wallpapers/contents/for pcs"
     )
   }
 })
 </script>
 
 <template>
-  <main id="phone">
+  <main id="wallpapers-pc">
     <SmartImage
-      v-for="(wallpaper, index) in phoneWallpapers"
+      v-for="(wallpaper, index) in pcWallpapers"
       :key="index"
-      ar="9/16"
-      width="360"
-      height="640"
+      ar="16/9"
+      width="640"
+      height="360"
       :src="wallpaper.download_url"
     />
   </main>
@@ -34,7 +34,7 @@ export default Vue.extend({
 <style lang="scss">
 @use "@/assets/styles/util";
 
-main#phone {
+main#wallpapers-pc {
   @include util.grid(4);
 }
 </style>

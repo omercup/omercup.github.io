@@ -5,11 +5,10 @@ const Config: NuxtConfig = {
   ssr: process.env.NODE_ENV !== "development", // For vite
 
   head: {
-    title: "omercup-wallpapers-website",
+    title: "omercup",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
@@ -32,6 +31,7 @@ const Config: NuxtConfig = {
   components: true,
   modules: ["@nuxt/http"],
   css: ["@/assets/styles/main"],
+  plugins: ["@/plugins/iconify", "@/plugins/vue-lanyard"],
   buildModules: ["nuxt-vite", "@nuxt/image", "@nuxt/typescript-build"],
 
   vite: {

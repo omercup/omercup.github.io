@@ -1,5 +1,12 @@
 @use "sass:color";
 
+@mixin line-clamp($val: 1) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $val;
+  -webkit-box-orient: vertical;
+}
+
 @mixin flex($dir: row, $gap: unset, $align: unset, $justify: unset) {
   gap: $gap;
   display: flex;
