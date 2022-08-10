@@ -114,7 +114,7 @@ main#home-page {
   @include util.flex(column, 2rem, center, center);
 
   div.status {
-    height: 2rem;
+    min-height: 2rem;
     padding-inline: 0.5rem;
     @include util.flex(row, 1rem, center);
 

@@ -2,7 +2,7 @@ import type { NuxtConfig } from "@nuxt/types"
 
 const Config: NuxtConfig = {
   target: "static",
-  ssr: process.env.NODE_ENV !== "development", // For vite
+  ssr: false, // For vite
 
   head: {
     title: "omercup",
