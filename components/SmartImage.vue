@@ -8,11 +8,6 @@ export default Vue.extend({
       required: false,
       default: null
     },
-    alt: {
-      type: String,
-      required: false,
-      default: null
-    },
     width: {
       type: String,
       required: false,
@@ -22,11 +17,6 @@ export default Vue.extend({
       type: String,
       required: false,
       default: null
-    },
-    radius: {
-      type: String,
-      required: false,
-      default: "0"
     },
     ar: {
       type: String,
@@ -54,7 +44,7 @@ export default Vue.extend({
     <nuxt-img
       class="smart-image"
       :src="src"
-      :alt="alt"
+      format="webp"
       loading="lazy"
       :width="width"
       :height="height"
