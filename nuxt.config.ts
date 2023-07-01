@@ -12,6 +12,10 @@ const Config: NuxtConfig = {
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
+			{
+        rel: "me",
+        href: "https://mastodon.social/@omercup"
+      },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com"

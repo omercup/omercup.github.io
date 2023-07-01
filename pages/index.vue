@@ -87,7 +87,7 @@ export default Vue.extend({
       <a
         href="https://mastodon.social/@omercup"
         target="_blank"
-        rel="me noopener noreferrer"
+        rel="noopener noreferrer"
       >
         <Icon icon="simple-icons:mastodon" width="2rem" />
       </a>
