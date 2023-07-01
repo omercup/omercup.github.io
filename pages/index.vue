@@ -85,6 +85,13 @@ export default Vue.extend({
         <Icon icon="simple-icons:lastdotfm" width="2rem" />
       </a>
       <a
+        href="https://mastodon.social/@omercup"
+        target="_blank"
+        rel="me noopener noreferrer"
+      >
+        <Icon icon="simple-icons:mastodon" width="2rem" />
+      </a>
+      <a
         href="https://steamcommunity.com/id/omercup"
         target="_blank"
         rel="noopener noreferrer"
